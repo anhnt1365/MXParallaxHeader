@@ -23,26 +23,28 @@
 import UIKit
 import MXParallaxHeader
 
-class MXWebViewController: UIViewController {
+class MXWebViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
-    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let request = URLRequest(url: URL(string: "https://dribbble.com/search?q=spaceship")!)
-        webView.loadRequest(request)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CellIdentifier")
+
     }
     
-    @IBAction func back(_ sender: AnyObject) {
-        webView.goBack()
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 50
     }
-    
-    @IBAction func forward(_ sender: AnyObject) {
-        webView.goForward()
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        var cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier")
+        if (cell == nil) {
+            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "CellIdentifier")
+        }
+        cell!.textLabel!.text = String(format: "Row %ld", indexPath.row)
+        return cell!
     }
-    
-    @IBAction func refresh(_ sender: AnyObject) {
-        webView.reload()
-    }
+
 }

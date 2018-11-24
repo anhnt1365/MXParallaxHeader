@@ -25,24 +25,12 @@ import MXParallaxHeader
 
 class MXFalconViewController: UIViewController, MXParallaxHeaderDelegate {
 
-    @IBOutlet weak var falcon: UIImageView!
+    @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        parallaxHeader?.delegate = self
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    // MARK: - MXParallaxHeaderDelegate
-
-    func parallaxHeaderDidScroll(_ parallaxHeader: MXParallaxHeader) {
-        let angle = parallaxHeader.progress * CGFloat(M_PI) * 2
-        self.falcon.transform = CGAffineTransform.identity.rotated(by: angle)
+        let request = URLRequest(url: URL(string: "https://google.com")!)
+        webView.loadRequest(request)
     }
 
 }
