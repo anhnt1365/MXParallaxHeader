@@ -26,11 +26,16 @@ import MXParallaxHeader
 class MXFalconViewController: UIViewController, MXParallaxHeaderDelegate {
 
     @IBOutlet weak var webView: UIWebView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let request = URLRequest(url: URL(string: "https://google.com")!)
         webView.loadRequest(request)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        webView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: view.frame.width, height: 300))
     }
 
 }

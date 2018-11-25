@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		128675AC21A85B0600CC78BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128675AB21A85B0600CC78BC /* MainViewController.swift */; };
+		8445579E21A9A3D0007999BD /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8445579D21A9A3D0007999BD /* WebViewController.swift */; };
 		9C01BC7E1DA3E55F0032494C /* MXParallaxHeader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C01BC7C1DA3E55F0032494C /* MXParallaxHeader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C01BC861DA3E56A0032494C /* MXParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C01BC801DA3E56A0032494C /* MXParallaxHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C01BC871DA3E56A0032494C /* MXParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C01BC811DA3E56A0032494C /* MXParallaxHeader.m */; };
@@ -99,6 +100,7 @@
 
 /* Begin PBXFileReference section */
 		128675AB21A85B0600CC78BC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8445579D21A9A3D0007999BD /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		9C01BC6F1DA3E4D40032494C /* MXParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MXParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C01BC7B1DA3E55F0032494C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Framework/Info.plist; sourceTree = "<group>"; };
 		9C01BC7C1DA3E55F0032494C /* MXParallaxHeader-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MXParallaxHeader-umbrella.h"; path = "Framework/MXParallaxHeader-umbrella.h"; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 				9C01BCD31DA3E9A80032494C /* LaunchScreen.storyboard */,
 				9C01BCD61DA3E9A80032494C /* Info.plist */,
 				128675AB21A85B0600CC78BC /* MainViewController.swift */,
+				8445579D21A9A3D0007999BD /* WebViewController.swift */,
 			);
 			path = "Example-swift";
 			sourceTree = "<group>";
@@ -398,7 +401,7 @@
 					};
 					9C01BCC71DA3E9A80032494C = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = C75GEDTP26;
+						DevelopmentTeam = 24JVC4P86T;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -481,6 +484,7 @@
 				9C01BC8B1DA3E56A0032494C /* MXScrollViewController.m in Sources */,
 				9C01BC891DA3E56A0032494C /* MXScrollView.m in Sources */,
 				9C01BC871DA3E56A0032494C /* MXParallaxHeader.m in Sources */,
+				8445579E21A9A3D0007999BD /* WebViewController.swift in Sources */,
 				128675AC21A85B0600CC78BC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -766,10 +770,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = C75GEDTP26;
+				DEVELOPMENT_TEAM = 24JVC4P86T;
 				INFOPLIST_FILE = "$(SRCROOT)/Example-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.maxep.MXParallaxHeader-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anhnt.MXParallaxHeader-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -783,10 +787,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = C75GEDTP26;
+				DEVELOPMENT_TEAM = 24JVC4P86T;
 				INFOPLIST_FILE = "$(SRCROOT)/Example-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.maxep.MXParallaxHeader-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anhnt.MXParallaxHeader-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
